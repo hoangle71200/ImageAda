@@ -1,0 +1,23 @@
+
+.buttonC{
+    border: 1;
+    border-radius: 50%;
+    width: 200px;
+    height: 40px;
+}
+
+.boxPoint {
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    border:1px solid black;
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color:yellow;
+}
+
+#icon {
+    height: 10px;
+    width: 10px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aiLaTrieuPhu.css">
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <header style="background-color: brown;">
+        <button class="btnStart" onclick="start()">Play Game</button>
+        <button class="btnStart" onclick="reload()">Reload</button>
+        <button class="btnLog" id="countdownID">Countdown</button>
+        <button class="btnLog" onclick="logOut()">Log Out</button>
+        <button class="btnEnd" onclick="endGame()">End Game</button>
+    </header>
+    <div class="cotHaiBen" style="float:left; background-color: aquamarine">
+        <div id="logID">
+            <table id="userInforID">
+                
+            </table>
+            <div id="loginID">
+                <button class="btnLog1" onclick="showLogin()">Login</button>
+            </div>
+            <br>
+            <div id="signupID">
+                <button class="btnLog1" onclick="showSignup()">Sign up</button>
+            </div>
+            <div>
+                <h1 style="text-align: center; color: red;" id="titleHSID">High Score</h1>
+                <table id="highScoreID" style="padding-left: 40px; padding-top: 20px; padding-bottom: 20px;">
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="rightID" class="cotHaiBen" style="float:right; background-color: aquamarine">
+        <div id="pointBoxID">
+
+        </div>
+    </div>
+    <div id="midID" class="container">
+        <header style="background-color:rgb(219, 231, 96); text-align: center;">
+            <div id="containerTop">
+                <p id="questionID" style="font-size: 30px; font-weight: bold;"> Question </p>
+            </div>
+        </header>
+        <div id="containerAlign">
+            <div>
+                
+            </div>
+        </div>
+        <footer>
+            <div id="containerBottom">
+                <table>
+                    <tr>
+                        <td><button id="answer1ID" class="answ" onclick="checkAnswer('A')" onmouseover="mouseMove(1)" onmouseout="mouseOut(1)">Answer question 1</button></td>
+                        <td class="distance"></td>
+                        <td><button id="answer2ID" class="answ" onclick="checkAnswer('B')" onmouseover="mouseMove(2)" onmouseout="mouseOut(2)">Answer question 2</button></td>
+                    </tr>
+                    <tr class="distance"></tr>
+                    <tr>
+                        <td><button id="answer3ID" class="answ" onclick="checkAnswer('C')" onmouseover="mouseMove(3)" onmouseout="mouseOut(3)">Answer question 3</button></td>
+                        <td class="distance"></td>
+                        <td><button id="answer4ID" class="answ" onclick="checkAnswer('D')" onmouseover="mouseMove(4)" onmouseout="mouseOut(4)">Answer question 4</button></td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
+<script src="aiLaTrieuPhu.js"></script>
+<script src="log.js"></script>
